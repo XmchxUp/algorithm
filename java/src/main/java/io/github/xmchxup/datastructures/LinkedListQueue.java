@@ -5,7 +5,7 @@ import java.util.NoSuchElementException;
 /**
  * @author xmchx (sunhuayangak47@gmail.com)
  */
-public class QueueLinkedList<E> {
+public class LinkedListQueue<E> {
 	private static class Node<E> {
 		E value;
 		Node<E> next;
@@ -19,7 +19,7 @@ public class QueueLinkedList<E> {
 	private Node<E> head;
 	private Node<E> tail;
 
-	public QueueLinkedList() {
+	public LinkedListQueue() {
 		head = null;
 		tail = null;
 	}

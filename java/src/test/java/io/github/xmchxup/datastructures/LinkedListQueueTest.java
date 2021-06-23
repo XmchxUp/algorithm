@@ -7,10 +7,10 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * @author xmchx (sunhuayangak47@gmail.com)
  */
-public class QueueLinkedListTest {
+public class LinkedListQueueTest {
 	@Test
 	public void test() {
-		QueueLinkedList<Integer> queue = new QueueLinkedList<>();
+		LinkedListQueue<Integer> queue = new LinkedListQueue<>();
 
 		assertTrue(queue.empty());
 		queue.enqueue(10);
