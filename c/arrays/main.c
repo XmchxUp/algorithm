@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <malloc.h>
+#include <assert.h>
 #include "vector.h"
 #include "vector.c"
+
 
 
 int main() {

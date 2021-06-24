@@ -1,7 +1,7 @@
 #ifndef VECTOR_H
 #define VECTOR_H
 
-#include <assert.h>
+
 #include <stdbool.h>
 
 typedef struct _xm_array {

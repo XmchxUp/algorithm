@@ -1,5 +1,3 @@
-#include <string.h>
-
 XArray *xarray_new(int capacity) {
     if (capacity < kDefaultCapacity) {
         capacity = kDefaultCapacity;
