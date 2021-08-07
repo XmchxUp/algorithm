@@ -1,5 +1,5 @@
-#ifndef VECTOR_H
-#define VECTOR_H
+#ifndef PRACTICE_C_VECTOR_H
+#define PRACTICE_C_VECTOR_H
 
 
 #include <stdbool.h>
@@ -54,4 +54,4 @@ void check_insert_index(XArray *arrayptr, int index);
 
 void resize(XArray *arrayptr, int new_capacity);
 
-#endif
+#endif // PRACTICE_C_VECTOR_H
