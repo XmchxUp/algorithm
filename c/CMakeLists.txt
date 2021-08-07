@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.17)
-project(c C)
+project(practice-c)
 
 
 add_subdirectory(arrays)
