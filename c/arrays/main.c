@@ -1,7 +1,8 @@
 #include <assert.h>
+#include <stdlib.h>
+#include <stdio.h>
 #include "vector.h"
 #include "vector.c"
-
 
 
 int main() {
@@ -50,9 +51,9 @@ int main() {
     }
 
 
-    assert(xarray_pop(arrayptr)==2);
-    assert(xarray_pop(arrayptr)==4);
-    assert(xarray_pop(arrayptr)==1);
+    assert(xarray_pop(arrayptr) == 2);
+    assert(xarray_pop(arrayptr) == 4);
+    assert(xarray_pop(arrayptr) == 1);
 
     xarray_print(arrayptr);
     xarray_destroy(arrayptr);
