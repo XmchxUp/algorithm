@@ -4,3 +4,4 @@ project(practice-c)
 
 add_subdirectory(arrays)
 add_subdirectory(linked_list)
+add_subdirectory(sorts)
