@@ -68,9 +68,19 @@ void mergeSort(int nums[], int l, int r, int temp[]) {
 }
 
 void bubbleSort(int nums[], int N) {
-
+    for (int i = 0; i < N; i++) {
+        for (int j = 1; j < N; j++) {
+            if (nums[j] < nums[j - 1]) {
+                swap(nums, j, j - 1);
+            }
+        }
+    }
 }
 
 void insertSort(int nums[], int N) {
-
+    for (int i = 0; i < N - 1; ++i) {
+        for (int j = i + 1; j > 0 && nums[j] < nums[j - 1]; j--) {
+            swap(nums, j, j - 1);
+        }
+    }
 }
