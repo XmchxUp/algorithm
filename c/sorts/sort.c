@@ -34,6 +34,43 @@ void selectSort(int nums[], int N) {
                 min = j;
             }
         }
-        swap(nums, min, j);
+        swap(nums, min, i);
     }
+}
+
+// [l, r)
+void mergeSort(int nums[], int l, int r, int temp[]) {
+    if (l + 1 >= r) {
+        return;
+    }
+
+    int mid = ((r - l) >> 1) + l;
+    mergeSort(nums, l, mid, temp);
+    mergeSort(nums, mid, r, temp);
+
+    int i = l, j = mid, idx = l;
+    while (i < mid && j < r) {
+        if (nums[i] < nums[j]) {
+            temp[idx++] = nums[i++];
+        } else {
+            temp[idx++] = nums[j++];
+        }
+    }
+    while (i < mid) {
+        temp[idx++] = nums[i++];
+    }
+    while (j < r) {
+        temp[idx++] = nums[j++];
+    }
+    for (i = l; i < r; i++) {
+        nums[i] = temp[i];
+    }
+}
+
+void bubbleSort(int nums[], int N) {
+
+}
+
+void insertSort(int nums[], int N) {
+
 }

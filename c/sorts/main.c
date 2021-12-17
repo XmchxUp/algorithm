@@ -10,22 +10,38 @@ int main(int argc, char *argv[]) {
     int nums3[N];
     int nums4[N];
     int nums5[N];
+    int temp[N];
 
     arrayCopy(nums2, nums, N);
     arrayCopy(nums3, nums, N);
     arrayCopy(nums4, nums, N);
     arrayCopy(nums5, nums, N);
 
-    printf("Quick Sort");
+    printf("Quick Sort：");
     quickSort(nums, 0, N);
     assert(isSorted(nums, N));
     printArray(nums, N);
 
+    printf("Merge Sort：");
+    mergeSort(nums2, 0, N, temp);
+    assert(isSorted(nums2, N));
+    printArray(nums2, N);
 
-    printf("Select Sort");
-    selectSort(nums2, N);
-    assert(isSorted(nums, N));
-    printArray(nums, N);
+
+    printf("Select Sort：");
+    selectSort(nums3, N);
+    assert(isSorted(nums3, N));
+    printArray(nums3, N);
+
+    printf("Bubble Sort：");
+    bubbleSort(nums4, N);
+    assert(isSorted(nums4, N));
+    printArray(nums4, N);
+
+    printf("Insert Sort：");
+    insertSort(nums5, N);
+    assert(isSorted(nums5, N));
+    printArray(nums5, N);
 
     return 0;
 }
