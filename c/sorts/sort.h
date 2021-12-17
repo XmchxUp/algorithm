@@ -3,4 +3,5 @@
 
 
 void quickSort(int nums[], int l, int r);
+void selectSort(int nums[], int N);
 #endif //PRACTICE_C_SORT_H
