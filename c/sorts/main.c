@@ -17,28 +17,28 @@ int main(int argc, char *argv[]) {
     arrayCopy(nums4, nums, N);
     arrayCopy(nums5, nums, N);
 
-    printf("Quick Sortï¼š");
+    printf("Quick Sort£º");
     quickSort(nums, 0, N);
     assert(isSorted(nums, N));
     printArray(nums, N);
 
-    printf("Merge Sortï¼š");
+    printf("Merge Sort£º");
     mergeSort(nums2, 0, N, temp);
     assert(isSorted(nums2, N));
     printArray(nums2, N);
 
 
-    printf("Select Sortï¼š");
+    printf("Select Sort£º");
     selectSort(nums3, N);
     assert(isSorted(nums3, N));
     printArray(nums3, N);
 
-    printf("Bubble Sortï¼š");
+    printf("Bubble Sort£º");
     bubbleSort(nums4, N);
     assert(isSorted(nums4, N));
     printArray(nums4, N);
 
-    printf("Insert Sortï¼š");
+    printf("Insert Sort£º");
     insertSort(nums5, N);
     assert(isSorted(nums5, N));
     printArray(nums5, N);
