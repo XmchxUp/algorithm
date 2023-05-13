@@ -2,4 +2,4 @@ module Algo
 
 go 1.18
 
-require github.com/magiconair/properties v1.8.7 // indirect
+require github.com/magiconair/properties v1.8.7
